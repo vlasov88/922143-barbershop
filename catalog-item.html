@@ -20,7 +20,7 @@
                 <li><a href="contacts.html">Контакты</a></li>
             </ul>
             <ul class="user-navigation">
-                <li><button type="button">Вход</button></li>
+                <li><a class="login-link" href="login.html">Вход</a></li>
             </ul>
         </nav>
     </header>
@@ -88,11 +88,26 @@
         </p>
     </footer>
     <section class="modal modal-login">
-        <h2>Личный кабинет</h2>
-        <p>Введите свой логин и пароль.</p>
-        <!-- Здесь будет форма -->
-        <span class="modal-close">x</span>
-    </section>
+            <h2>Личный кабинет</h2>
+            <p>Введите свой логин и пароль.</p>
+            <form class="login-form" method="POST" action="https://htmlacademy.ru/echo">
+                <p>
+                    <input name="login" class="login" type="text" placeholder="Логин">
+                    <label for="remember-field" class="visually-hidden">Логин</label>
+                </p>
+                <p>
+                    <input name="password" class="password" type="password" placeholder="Пароль">
+                    <label for="remember-field" class="visually-hidden">Пароль</label>
+                </p>
+                <p class="login-password-info">
+                    <input id="remember-field" name="remember" type="checkbox" checked>
+                    <label for="remember-field">Запомните меня</label>
+                    <a class="restore" href="">Я забыл пароль!</a>
+                </div>
+                <button type="submit" value="Войти">
+            </form>
+            <button class="modal-close" type="button">Закрыть</button>
+        </section>
 </body>
 
 </html>
